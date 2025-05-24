@@ -2,12 +2,31 @@ body{
     font-family: Arial, Helvetica,
     sans-serif;
     background-color: #f4f4f4;
-    color: #333
+    color: #333;
+    margin:0;
     text-align = center;
     padding:20px;
+    overflow: hidden;
 }
 
 img{
-    width:300px;
+    width:200px;
 
+}
+
+button{
+background-color: #4a90e2;
+color:#fff
+padding: 10px 20px;
+border:none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.centered-content{
+height:100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
 }

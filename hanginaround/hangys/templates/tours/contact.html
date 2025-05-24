@@ -1,0 +1,25 @@
+{% load static %}
+
+<!Doctype html>
+<html lang="en">
+<head>
+
+  <title>Contact Us</title>
+
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" type="text/css" media="all">
+    <script src = "{% static 'js/script.js' %}"></script>
+
+</head>
+
+<body>
+<h1>Contact Us</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Submit</button>
+
+</form>
+</body>
+
+
+</html>
