@@ -1,0 +1,31 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+<head>
+  <title>HangYs</title>
+
+    <link rel = "stylesheet" href = "{% static 'styles/styles.css' %}">
+    <script src = "{% static 'js/script.js' %}"></script>
+    <img src = "{% static 'images/logo.jpg' %}" alt="Django Logo">
+
+</head>
+
+<body>
+
+<div class="centered_content">
+    <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+    <form action="{% url 'contact' %}" method="get">
+        <button type="submit" class = "btn">Form</button>
+    </form>
+    </div>
+
+  <h1>Asia Tour Schedule for February 28!</h1>
+   <ul>
+     {% for tour in tours %}
+     <li>{{tour}}</li>
+     {% endfor %}
+
+
+   </ul>
+</body>
+</html>
